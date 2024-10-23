@@ -343,11 +343,11 @@ footer {
         margin: 10px 0;
     }
     
-    .intro h1 {
+    .home-text .block{ 
         font-size: 2.5rem;
     }
 
-    .intro p {
+    .home p {
         font-size: 1.2rem;
     }
 
@@ -373,12 +373,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .intro h1 {
-        font-size: 2rem;
+    .home-text .block{ 
+        font-size: 2.5rem;
     }
 
-    .intro p {
-        font-size: 1rem;
+    .home p {
+        font-size: 1.2rem;
     }
 
     .btn {
@@ -389,7 +389,7 @@ footer {
         height: 60vh;
     }
 
-    #about h2, #projects h2, #contact h2 {
+    #about , #projects , #contact  {
         font-size: 2rem;
     }
 
