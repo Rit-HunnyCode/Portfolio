@@ -12,13 +12,12 @@ body {
 }
 
 /* Header Section */
- 
 header {
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(218, 156, 43), #f0f0f0 80%)
+    background: linear-gradient(to bottom, rgb(218, 156, 43), #f0f0f0 80%);
 }
-header nav{
-   
+
+header nav {
     color: #fff;
     height: 20vh;
     text-align: center;
@@ -46,203 +45,109 @@ nav ul li a {
 }
 
 nav ul li:hover a,
-nav ul li.active a{
-  color: blueviolet;
+nav ul li.active a {
+    color: blueviolet;
 }
 
-.home{
+.home {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     color: #f4f4f4;
     padding: 60px 30px 30px 20%;
-    /* align-content: center; */
     height: 100vh;
-    /* padding-left: 20px; */
-
-
 }
 
-.home-text{
-    padding: 59px;
+.home-text {
+    padding: 20px;
     color: #333333;
+    flex-basis: 60%;
 }
+
 .home-text h1 {
     font-size: 34px;
-    
-
-    
 }
 
-.home-text .block{
+.home-text .block {
     display: block;
-    width: 100%;    
-    margin: 10px auto; 
-    padding: 70px; 
-    background-color:linear-gradient(to bottom, rgb(20, 15, 6), white 80%);
-    align-content: center;
-    border: 2px solid #ccc;    
-    border-radius: 40px;  
-    font-family: 'Roboto', sans-serif; 
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 0 0 15px 5px rgb(218, 156, 43)  ; /* Glowing orange effect */    
-
+    margin: 10px auto;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 15px 5px rgb(218, 156, 43);
 }
-.home-text h2 span{
+
+.home-text h2 span {
     display: inline-block;
     -webkit-text-stroke: 1.7px rgb(90, 6, 58);
     color: transparent;
     animation: display-text 2s linear infinite;
-    animation-delay: calc(-1s* var(--i));
+    animation-delay: calc(-1s * var(--i));
 }
 
 @keyframes display-text {
     25%,
-    100%{
-        display:none;
+    100% {
+        display: none;
     }
-    
 }
 
-/* .home-text h1{
-    font-size: 35px;
-    margin-top: -10px;
-    
-
-} */
-.home-text p{
-    font-size: 16 px;
-    margin-top: 10px;
-    
-
-    
+.home-img {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.home-img .img-box{
+
+.home-img .img-box {
     position: relative;
-   width: 16vw;
-   height: 16vw;
-   /* background-color: red; */
-   border-radius: 50%;
-   display: flex;
-   /* padding: 60px 20%; */
-   align-content: center;
-   padding: 5px ;
-   justify-content: center;
-   align-items: center;
-   overflow: hidden;
-   border: none;
-   border:.7px orange;
-
-   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid orange;
 }
-.home-img .img-box::before{
+
+.home-img .img-box::before {
     content: "";
     width: 500px;
     height: 500px;
-    position:absolute;
-    background: conic-gradient(transparent, transparent,transparent,orange);
-    /* overflow: hidden; */
-    border:.7px orange;
-
+    position: absolute;
+    background: conic-gradient(transparent, transparent, transparent, orange);
 }
 
-.home-img .img-box .img-item{
+.home-img .img-box .img-item {
     position: relative;
     width: 100%;
     height: 100%;
-    
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    z-index:1;
     overflow: hidden;
-    border:.7px orange;
-  
-
-   /* padding: 60px 20%; */
-   /* align-content: end; */
-
 }
 
-.home-img .img-box .img-item .img{
-    position: absolute;
-    width: 50%;
-    display: block;
+.home-img .img-box .img-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-   /* padding: 60px 60px 60px; */
-   align-content: flex-end;
-   bottom: -50px;
-   mix-blend-mode: lighten;
-   
-
-}
-
-
-
-
-.btn {
-    background-color: #00aaff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #0088cc;
+    border-radius: 50%;
 }
 
 /* About Section */
 #about {
     padding: 20px;
-    /* text-align: center; */
-    background: linear-gradient(to bottom,  rgb(218, 156, 43), white 80%);
+    background: linear-gradient(to bottom, rgb(218, 156, 43), white 80%);
     height: 100vh;
-    
-}
-#about heading{
-    font-family: 'Roboto', sans-serif;
 }
 
-#about .block1{
-    display: block;
-    width: 100%;    
-    margin: 10px auto; 
-    padding: 15px; 
-    
-    border: 2px solid #ccc;    
-    border-radius: 10px;    
-    font-family: 'Roboto', sans-serif;  
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 0 0 15px 5px  rgb(218, 156, 43); /* Glowing orange effect */
-}
-#about .block2{
-    display: block;
-    width: 100%;    
-    margin: 10px auto; 
-    padding: 15px; 
-    background-color:linear-gradient(to bottom, rgb(20, 15, 6), white 80%);
-    border: 2px solid #ccc;    
-    border-radius: 10px;  
-    font-family: 'Roboto', sans-serif; 
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 0 0 15px 5px rgb(218, 156, 43)  ; /* Glowing orange effect */     
-}
-
-
-
-
-#about p {
-    font-size: 1.2rem; 
-    margin-bottom: 20px;
-}
-
-#about ul {
-    list-style: none;
-    padding: 0;
-}
-
-#about ul li {
-    font-size: 1.1rem;
-    margin: 5px 0;
+#about .block1,
+#about .block2 {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgb(218, 156, 43);
 }
 
 /* Projects Section */
@@ -250,31 +155,15 @@ nav ul li.active a{
     padding: 50px;
     text-align: center;
     height: 100vh;
-    background: linear-gradient(to bottom,  rgb(218, 156, 43), white 80%);
-}
-
-#projects h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    background: linear-gradient(to bottom, rgb(218, 156, 43), white 80%);
 }
 
 .project {
-    display: block;
-    width: 100%;    
-    margin: 10px auto; 
-    padding: 15px; 
-    background-color:linear-gradient(to bottom, rgb(20, 15, 6), white 80%);
-    border: 2px solid #ccc;    
-    border-radius: 10px;  
-    font-family: 'Roboto', sans-serif; 
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 0 0 15px 5px rgb(218, 156, 43)  ; /* Glowing orange effect */  
-}
-
-
-
-.project p {
-    margin: 10px 0;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgb(218, 156, 43);
 }
 
 /* Contact Section */
@@ -330,6 +219,7 @@ button:hover {
     background-color: #555;
 }
 
+
 /* Footer */
 footer {
     text-align: center;
@@ -337,60 +227,77 @@ footer {
     background: linear-gradient(to bottom, #333333, #f0f0f0 80%);
     color: white;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        padding: 30px;
+        order: 2;
+    }
+
+    .home-img {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #about, #projects, #contact {
+        height: auto;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-    
-    .home-text .block{ 
-        font-size: 2.5rem;
+
+    .home-text h1 {
+        font-size: 28px;
     }
 
-    .home p {
-        font-size: 1.2rem;
+    .home-text .block {
+        font-size: 1rem;
+        padding: 20px;
     }
 
-    .btn {
-        padding: 8px 16px;
+    .home-img .img-box {
+        width: 150px;
+        height: 150px;
     }
 
     header {
-        height: 70vh;
-    }
-
-    #about, #projects, #contact {
-        padding: 30px;
-    }
-
-    .project {
-        padding: 15px;
+        height: auto;
     }
 
     form {
         width: 90%;
     }
+
+    .project, .block1, .block2 {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    .home-text .block{ 
-        font-size: 2.5rem;
+    .home-text h1 {
+        font-size: 24px;
     }
 
-    .home p {
-        font-size: 1.2rem;
+    .home-text .block {
+        font-size: 1rem;
+        padding: 15px;
     }
 
-    .btn {
-        padding: 6px 12px;
-    }
-
-    header {
-        height: 60vh;
-    }
-
-    #about , #projects , #contact  {
-        font-size: 2rem;
+    .home-img .img-box {
+        width: 120px;
+        height: 120px;
     }
 
     form {
@@ -403,5 +310,9 @@ footer {
 
     button {
         padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 0.9rem;
     }
 }
